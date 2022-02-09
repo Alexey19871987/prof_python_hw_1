@@ -1,8 +1,9 @@
-from application import people
-from application import salary
-import main
+from application.db.people import *
+from main import *
+from application.salary import *
+
 
 if __name__ == '__main__':
-    people.get_employees()
-    salary.calculate_salary()
-    main.date_now()
+    get_employees()
+    date_now()
+    calculate_salary()
